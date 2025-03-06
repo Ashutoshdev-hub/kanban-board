@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Kanban Board</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="https://picsum.photos/40?random=10" alt="Logo" />
+        Kanban Board
+      </div>
+      <div class="navbar-actions">
+        <button class="nav-btn" id="loginBtn">Login</button>
+        <button class="nav-btn" id="logoutBtn" style="display: none">
+          Logout
+        </button>
+        <button class="nav-btn" id="toggleTheme">Dark Mode</button>
+      </div>
+    </nav>
+    <div class="board-container">
+      <div class="controls">
+        <button class="add-btn column-btn pulse" id="addColumn">
+          + New Column
+        </button>
+      </div>
+      <div class="kanban-board" id="kanbanBoard"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
